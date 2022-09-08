@@ -11,6 +11,8 @@ class rock_paper_scissor:
             if player == 'p' and robot == 'r' or player == 's' and robot == 'p' or player == 'r' and robot == 's':
                 print("YOU WIN!!!")
                 score[0] += 1
+            elif player == robot:
+                print("Tie")
             else:
                 print("Better Luck")
                 score[1] += 1
